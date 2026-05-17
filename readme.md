@@ -59,7 +59,7 @@ pip install uv
 
 python -m venv .venv
 .venv/Scripts/activate
-pip install -r requirements.txt
+uv pip install -r client/requirements.txt
 
 To run the server:
 python main.py

@@ -1,2 +1,10 @@
 uv
 fastmcp
+# for mcp client use the below packages
+langchain
+langchain-openai
+langchain-mcp-adapters
+python-dotenv
+streamlit
+langchain_groq
+mcp_use

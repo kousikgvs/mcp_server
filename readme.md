@@ -61,11 +61,30 @@ python -m venv .venv
 .venv/Scripts/activate
 pip install -r requirements.txt
 
-to run the server
+To run the server:
 python main.py
 
 
-to test the server workin insoection
+To test the server with inspection:
 ```
 uv run fastmcp dev inspector main.py:server
+```
+
+Deployed the MCP server to https://horizon.prefect.io/
+
+Added the code to GitHub and connected the GitHub repo to horizon.prefect.io.
+
+It deployed the server and provided a server name,
+which was then added to `mcp.json`.
+
+The deployed MCP server name is:
+`mcp_zoophagous-re_generate_random_strings`
+
+To use the deployed server, add the following entry to your `mcp.json` under `servers`:
+
+```json
+"zoophagous-red-squirrel": {
+  "type": "http",
+  "url": "https://zoophagous-red-squirrel.fastmcp.app/mcp"
+}
 ```

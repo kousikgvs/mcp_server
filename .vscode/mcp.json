@@ -1,16 +1,20 @@
 {
   "servers": {
-    "mcp-server": {
-      "type": "stdio",
-      "command": "C:\\Users\\veguntur\\.local\\bin\\uv.exe",
-      "args": [
-        "--directory",
-        "c:\\projects\\mcp_server",
-        "run",
-        "fastmcp",
-        "run",
-        "c:\\projects\\mcp_server\\main.py:server"
-      ]
+    // "mcp-server": {
+    //   "type": "stdio",
+    //   "command": "C:\\Users\\veguntur\\.local\\bin\\uv.exe",
+    //   "args": [
+    //     "--directory",
+    //     "c:\\projects\\mcp_server",
+    //     "run",
+    //     "fastmcp",
+    //     "run",
+    //     "c:\\projects\\mcp_server\\main.py:server"
+    //   ]
+    // },
+    "zoophagous-red-squirrel": {
+      "type": "http",
+      "url": "https://zoophagous-red-squirrel.fastmcp.app/mcp"
     }
   }
 }

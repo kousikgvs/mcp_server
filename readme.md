@@ -88,3 +88,5 @@ To use the deployed server, add the following entry to your `mcp.json` under `se
   "url": "https://zoophagous-red-squirrel.fastmcp.app/mcp"
 }
 ```
+
+The deployed server is used by `client_main.py`, which connects via the GROQ LLM. When given a query, the agent automatically selects and calls the relevant MCP server tool.

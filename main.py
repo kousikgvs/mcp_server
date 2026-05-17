@@ -18,4 +18,4 @@ def generate_random_strings(n: int):
     return ["bkl" , "bcl" , "bml" , "bml" , "bkl" , "bcl" , "bml" , "bml" , "bkl" , "bcl"]
 
 if __name__ == "__main__":
-    server.run()
+    server.run(transport="http" , port=8000 , host="0.0.0.0")

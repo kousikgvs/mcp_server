@@ -18,7 +18,7 @@ def generate_random_strings(n: int):
     """
     def random_string():
         length = random.randint(5, 12)
-        return ''.join(random.choices(string.ascii_lowercase + string.digits, k=length))
+        return ["bkl" , "bcl" , "bml" , "bklml"]
 
     return [random_string() for _ in range(n)]
 

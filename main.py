@@ -1,5 +1,6 @@
 from fastmcp import FastMCP
 import random
+import string
 
 # Initialize the MCP server
 server = FastMCP()
@@ -15,7 +16,11 @@ def generate_random_strings(n: int):
     Returns:
         list: Array of random strings.
     """
-    return ["bkl" , "bcl" , "bml" , "bml" , "bkl" , "bcl" , "bml" , "bml" , "bkl" , "bcl"]
+    def random_string():
+        length = random.randint(5, 12)
+        return ''.join(random.choices(string.ascii_lowercase + string.digits, k=length))
+
+    return [random_string() for _ in range(n)]
 
 if __name__ == "__main__":
-    server.run(transport="http" , port=8000 , host="0.0.0.0")
+    server.run(transport="streamable_http" , port=8000 , host="0.0.0.0")
